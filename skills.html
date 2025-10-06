@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Shreyash Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .skills-header {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 60px;
+      margin-bottom: 32px;
+      color: #C26A6A;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .skill-card {
+      background: #18181b;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px #2226  ;
+      padding: 32px 0 24px 0;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #222;
+    }
+    .skill-card:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 6px 24px #C26A6A44;
+      border-color: #C26A6A;
+    }
+    .skill-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #C26A6A;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .skill-desc {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 0;
+    }
+    @media (max-width: 600px) {
+      .skills-header {
+        font-size: 2rem;
+      }
+      .skills-grid {
+        gap: 18px;
+      }
+      .skill-card {
+        padding: 20px 0 14px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header style="padding: 32px 0 0 0; text-align:center;">
+    <a href="index.html" style="font-size:2rem; font-weight:700; color:#C26A6A; text-decoration:none; letter-spacing:1px;">Portfolio</a>
+    <nav style="margin-top:18px;">
+      <a href="index.html" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:500;">Home</a>
+      <a href="#" style="color:#C26A6A; margin:0 18px; text-decoration:underline; font-weight:700;">Skills</a>
+      <a href="#" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:500;">Education</a>
+      <a href="#" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:500;">Experience</a>
+      <a href="#" style="color:#fff; margin:0 18px; text-decoration:none; font-weight:500;">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="skills-header">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-title">HTML</div>
+        <div class="skill-desc">Semantic, accessible markup for modern web apps.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">CSS</div>
+        <div class="skill-desc">Responsive layouts, Flexbox, Grid, animations, custom themes.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-desc">ES6+, DOM manipulation, async programming, API integration.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">React</div>
+        <div class="skill-desc">Hooks, state management, component architecture, SPA development.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">TypeScript</div>
+        <div class="skill-desc">Type safety, scalable codebases, modern tooling.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Tailwind CSS</div>
+        <div class="skill-desc">Utility-first styling, rapid prototyping, custom design systems.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Node.js</div>
+        <div class="skill-desc">Backend APIs, RESTful services, server-side scripting.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Java</div>
+        <div class="skill-desc">OOP, algorithms, backend logic, cross-platform apps.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Python</div>
+        <div class="skill-desc">Scripting, automation, data analysis, ML basics.</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
